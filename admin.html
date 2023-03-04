@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Car Control Panel - Admin</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h1>Welcome, admin</h1>
+
+    <h2>Settings</h2>
+    <p>Here you can manage the car's settings:</p>
+
+    <form>
+      <fieldset>
+        <legend>Climate control</legend>
+        <label for="temperature">Temperature:</label>
+        <input type="number" id="temperature" name="temperature" min="60" max="80" value="72"><br>
+
+        <label for="fan-speed">Fan speed:</label>
+        <select id="fan-speed" name="fan-speed">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Lighting</legend>
+        <label for="headlights">Headlights:</label>
+        <select id="headlights" name="headlights">
+          <option value="off">Off</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="interior-lights">Interior lights:</label>
+        <select id="interior-lights" name="interior-lights">
+          <option value="off">Off</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Security</legend>
+        <label for="lock-doors">Lock doors:</label>
+        <input type="checkbox" id="lock-doors" name="lock-doors" checked><br>
+
+        <label for="alarm">Alarm:</label>
+        <input type="checkbox" id="alarm" name="alarm"><br>
+      </fieldset>
+
+      <input type="submit" value="Save">
+    </form>
+  </body>
